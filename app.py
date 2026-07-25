@@ -49,11 +49,12 @@ st.markdown("""
     }
 
   
-    .main .block-container {
+    section.main > div {
         max-width: 1150px;
-        margin: auto;
-        padding-top: 2.5rem;
-        padding-bottom: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .stButton>button {
