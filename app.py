@@ -42,10 +42,20 @@ st.set_page_config(
 # Estilos CSS Avanzados para modo oscuro premium
 st.markdown("""
     <style>
+
     .stApp {
         background-color: #0e1117;
         color: #f3f4f6;
     }
+
+  
+    .main .block-container {
+        max-width: 1150px;
+        margin: auto;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
     .stButton>button {
         width: 100%;
         background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
@@ -57,11 +67,13 @@ st.markdown("""
         box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
         transition: all 0.3s ease;
     }
+
     .stButton>button:hover {
         background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
         box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
         transform: translateY(-1px);
     }
+
     div[data-testid="stForm"] {
         background-color: #161b22;
         padding: 24px;
@@ -69,9 +81,9 @@ st.markdown("""
         border: 1px solid #30363d;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     }
+
     </style>
 """, unsafe_allow_html=True)
-
 # Carga del modelo y objetos con caché
 @st.cache_resource
 def cargar_recursos():
